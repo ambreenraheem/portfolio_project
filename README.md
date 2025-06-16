@@ -1,7 +1,7 @@
 # portfolio_project
 
 ### Name: Ambreen Abdul Raheem
-### Profession: Microsoft Power BI Data analyst (Upwork Freelancer)
+### Profession: Microsoft Power BI Data Analyst (Upwork Freelancer)
 ### Project: Making my own Portfolio Website
 #### I'd like to share my coding experience in creating a portfolio website, and this GitHub repository is open-source for all.
 ### Date:01-06-2025
@@ -12,9 +12,9 @@
 
 # Building a portfolio
 
-#### we will use mkdocs for building a protfolio. Mkdocs is a static site generator that is geared towards project documents. It is written in python and uses the Jinja2 teplating engine. Mkdocs is easy to use and has a lot of features that make it a good choice for a portfolio.
+We will use MkDocs for building a portfolio. MkDocs is a static site generator geared towards project documents. It is written in Python and uses the Jinja2 templating engine. Mkdocs is easy to use and has a lot of features that make it a good choice for a portfolio.
 
-#### For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+#### For full documentation, visit [mkdocs.org](https://www.mkdocs.org).
 
 # 1. Install Mkdocs
 ```bash
@@ -27,12 +27,12 @@ mkdocs new my_portfolio_website_project
 cd my_portfolio_website_project
 ```
 
-# 3. Run the developement server
+# 3. Run the development server
 ```bash
 mkdocs serve
 ```
 
-> This is how you can spacify the port and host
+> This is how you can specify the port and host
 mkdocs serve -a 127.0.0.1:8500
 
 
@@ -58,7 +58,7 @@ git push -u origin main
 ```
 
 # Step 7: Install GitHub Deploy Tool
-#### Install the deploy helper, follow the instructions given in Step-1 to install the mkdocs package.
+#### Install the deploy helper, follow the instructions given in Step 1 to install the mkdocs package.
 #### And update mkdocs.yml if you need to customize anything:
 ```bash
 theme:
