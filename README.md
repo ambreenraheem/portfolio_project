@@ -6,6 +6,66 @@
 #### I'd like to share my coding experience in creating a portfolio website, and this GitHub repository is open-source for all.
 ### Date:01-06-2025
 
+# Building a portfolio
+
+We will use MkDocs for building a portfolio. MkDocs is a static site generator geared towards project documents. It is written in Python and uses the Jinja2 templating engine. Mkdocs is easy to use and has a lot of features that make it a good choice for a portfolio.
+
+#### For full documentation, visit [mkdocs.org](https://www.mkdocs.org).
+
+# 1. Install Mkdocs
+```bash
+pip install mkdocs
+```
+
+# 2. Creating a new project
+```bash
+mkdocs new my_portfolio_website_project
+cd my_portfolio_website_project
+```
+
+# 3. Run the development server
+```bash
+mkdocs serve
+```
+
+> This is how you can specify the port and host
+mkdocs serve -a 127.0.0.1:8500
+
+
+# 4. Build the project
+```bash
+mkdocs build
+```
+#### Note: "It will create a new folder named site containing the complete HTML code for our website. You can reuse this folder on any platform to build a new website with a different name or for a new project." 
+
+
+# 5. mkdocs.yml and index.md
+ #### Note: "For the website, we will implement all remaining changes, updates, and information additions in these two separate files."
+
+
+# 6. Initialize Git and push your project:
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/your-username/mera_portfolio.git # replace the link to your repo
+git push -u origin main
+```
+
+# Step 7: Install GitHub Deploy Tool
+#### Install the deploy helper, follow the instructions given in Step 1 to install the mkdocs package.
+#### And update mkdocs.yml if you need to customize anything:
+```bash
+theme:
+  name: material          # if you want
+```
+# Step 8: Deploy to GitHub Pages
+```bash
+mkdocs gh-deploy
+```
+**This command will deploy your site to the gh-pages branch of your repository. If you want to deploy to a different branch, you can specify it using the --remote-branch option.**
+
 
 # 🌐 Step 9: Access Your Live Site
 The site is live on GitHub Pages at: https://your-username.github.io/mera_portfolio/ Replace your-username with your GitHub username and mera_portfolio with your repository name. You can also specify a custom domain by adding a CNAME file to the docs/ directory. This file should contain your custom domain name (e.g., www.yourdomain.com).
