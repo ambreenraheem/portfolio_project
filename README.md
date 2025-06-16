@@ -12,18 +12,19 @@ We will use MkDocs for building a portfolio. MkDocs is a static site generator g
 
 #### For full documentation, visit [mkdocs.org](https://www.mkdocs.org).
 
-# 1. Install Mkdocs
+# Step 1: Install Mkdocs
 ```bash
 pip install mkdocs
+pip install mkdocs-git-revision-date-localized-plugin mkdocs-material mkdocs-material-extensions mkdocs-git-authors-plugin
 ```
 
-# 2. Creating a new project
+# Step 2: Creating a new project
 ```bash
 mkdocs new my_portfolio_website_project
 cd my_portfolio_website_project
 ```
 
-# 3. Run the development server
+# Step 3: Run the development server
 ```bash
 mkdocs serve
 ```
@@ -32,18 +33,18 @@ mkdocs serve
 mkdocs serve -a 127.0.0.1:8500
 
 
-# 4. Build the project
+# Step 4: Build the project
 ```bash
 mkdocs build
 ```
 #### Note: "It will create a new folder named site containing the complete HTML code for our website. You can reuse this folder on any platform to build a new website with a different name or for a new project." 
 
 
-# 5. mkdocs.yml and index.md
+# Step 5: mkdocs.yml and docs/
  #### Note: "For the website, we will implement all remaining changes, updates, and information additions in these two separate files."
 
 
-# 6. Initialize Git and push your project:
+# Step 6: Initialize Git and push your project:
 ```bash
 git init
 git add .
