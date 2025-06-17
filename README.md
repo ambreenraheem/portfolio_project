@@ -8,7 +8,7 @@
 
 # Building a portfolio
 
-We will use MkDocs for building a portfolio. MkDocs is a static site generator geared towards project documents. It is written in Python and uses the Jinja2 templating engine. Mkdocs is easy to use and has a lot of features that make it a good choice for a portfolio.
+We will use MkDocs for building a portfolio. MkDocs is a static site generator designed for project documentation. It is written in Python and uses the Jinja2 templating engine. Mkdocs is easy to use and has a lot of features that make it a good choice for a portfolio.
 
 #### For full documentation, visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -70,3 +70,15 @@ mkdocs gh-deploy
 
 # 🌐 Step 9: Access Your Live Site
 The site is live on GitHub Pages at: https://your-username.github.io/mera_portfolio/ Replace your-username with your GitHub username and mera_portfolio with your repository name. You can also specify a custom domain by adding a CNAME file to the docs/ directory. This file should contain your custom domain name (e.g., www.yourdomain.com).
+
+# Step 10: (mkdocs build --clean) — Why and When You Need It
+# Purpose:
+This command cleans the old site build before creating a new one.
+
+⚠️ Problem Without --clean:
+MkDocs by default keeps old files from previous builds in the site/ folder — even if:
+- You've deleted or renamed a file (like a PDF),
+
+- Or moved it inside docs/,
+
+- Or changed folder structure.
